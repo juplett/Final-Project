@@ -12,16 +12,19 @@
     
     <header class="header">
         <div class="container flexbox">
+            <nav>
+                <ul>
+                    <li><a href="sign_up.html">Sign up</a></li>
+                    <li><a href="index.html">Search</a></li>
+                    <button id="login" onclick="openForm()">Login</button>
+                </ul>
+            </nav>
+
             <div class="title">
                 <h1>Final Project JS</h1>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#" target="_blank">Sign up</a></li>
-                    <li><a href="#" target="_blank">Login</a></li>
-                </ul>
-            </nav>
+            
           
         </div>
 
@@ -33,18 +36,48 @@
         <div class="conainer">
             <div class="heading">
                 <h2>Search</h2>
-                <h3>Must sign up or Login befor using search</h3>
+                <h3>Must Sign up & Login befor using search</h3>
                 <hr>
             </div>
         </div>
     </div>
+   
 
-    <!-- colums -->
 
+    <!-- search bar with google and bing buttons -->
 
     <section>
  
+        <div id="search-eng">
+            <input type="search" id="search-bar" placeholder="Search bar">
+            <button id="google" class="searchBtn" disabled>Google</button>       
+            <button id="bing" class="searchBtn" disabled>Bing</button>
+        </div>
+
+      
+       
+
     </section>
+
+        <!-- pop up form (login) -->
+
+        <div id="loginForm">
+            <form class="form">
+              <h1>Login</h1>
+
+              <p class="popup"><span class="popuptext" id="myPopup"></span></p>
+          
+              <input type="text" placeholder="Enter Username" id="userName">
+          
+              <input type="text" placeholder="Enter Password" id="psw">
+          
+              <div class="buttons">
+                <button type="button" class="btn" id="enter">Login</button>
+                <button type="button" class="btn" onclick="closeForm()">Close</button>
+              </div>
+            
+            </form>
+          </div>
 
 
     </main>
