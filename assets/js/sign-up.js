@@ -10,7 +10,6 @@ const $send = document.getElementById('send');
 const emailPattern = /^(?=^.{8,}$)[-A-Za-z0-9]+([.-][a-zA-Z0-9]+)@[A-Za-z0-9]+([.-][a-zA-Z0-9]+).[A-Za-z]{2,}$/;
 
 $send.addEventListener('click', function() {
-    const $form = document.getElementById('my-form');
 
     let firstName = $firstName.value.trim();
     let lastName = $lastName.value.trim();
@@ -65,9 +64,10 @@ $send.addEventListener('click', function() {
         let popup = document.getElementById("myPopup");
         popup.innerText = message;
     }else {
-        $form.submit();
+        
         let popup = document.getElementById("myPopup");
         popup.innerText = 'Thank you for signing up';
+ 
     
     }
 
